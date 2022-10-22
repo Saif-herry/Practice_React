@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "server",
+      "author": "sandy"
+    },
+    {
+      "id": 3,
+      "title": "json",
+      "author": "sam"
+    },
+    {
+      "author": "good",
+      "title": "Sam",
+      "id": 5
+    },
+    {
+      "author": "hello bonsai",
+      "title": "Sam",
+      "id": 6
+    },
+    {
+      "author": "Redux",
+      "title": "Sandy",
+      "id": 7
+    },
+    {
+      "author": "AbrakaDabra",
+      "title": "ritehsh",
+      "id": 8
+    },
+    {
+      "author": "Software Developer ",
+      "title": "Mohammad Saif",
+      "id": 9
+    }
+  ]
+}
