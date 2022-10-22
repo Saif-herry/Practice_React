@@ -49,9 +49,15 @@ function Todo(){
         axios.post(api,obj).then((res)=>Fetchdata(res)).catch((err)=>console.log("err",err))
     }
 
+////////////////////DELETE FUNCTION WITH AXIOS/////////////////////////
+function handleDelete(id){
+  console.log(id)
+  axios.delete(api+`/${id}`)
+  .then((res)=>Fetchdata())
+  .catch((err)=>console.log("err:",err))
+}
 
 
-    
     return(
         <div>
 
@@ -60,6 +66,7 @@ function Todo(){
                 <input placeholder = "Enter Author Name" onChange={handleInput1}/>
                 <button onClick={handleClick}>+</button>
             </div>
+{/* ///////////////////////////DATA MAPING///////////////////////////////////             */}
             <div>
                 {
                     data.map((item)=>{
@@ -67,6 +74,7 @@ function Todo(){
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlbxdiKTlBWwhGDX-GcYMHOgcR7e1JgRssgw&usqp=CAU" alt=""/>
                             <p>{item.title}</p>
                             <p>{item.author}</p>
+                            <button onClick={()=>handleDelete(item.id)}>DELETE</button>
                         </div>
                     })
                 }
