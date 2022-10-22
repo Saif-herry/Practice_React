@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.parentdiv{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-gap: 10px;
+margin-top: 10px;
+
+}
+
+.childdiv {
+  padding: 10PX;
+  line-height: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.inputdiv{
+  display: flex;
+  flex-direction: column;
+  line-height: 15px;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

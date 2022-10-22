@@ -61,16 +61,21 @@ function handleDelete(id){
     return(
         <div>
 
-            <div>
+            <div className="inputdiv">
+                <div>
+                <h3>Enter Title and Author</h3>
+                </div>
+                <div>
                 <input placeholder="Enter Title" onChange={handleInput}/>
                 <input placeholder = "Enter Author Name" onChange={handleInput1}/>
                 <button onClick={handleClick}>+</button>
+                </div>
             </div>
 {/* ///////////////////////////DATA MAPING///////////////////////////////////             */}
-            <div>
+            <div className="parentdiv">
                 {
                     data.map((item)=>{
-                        return <div key={item.id}>
+                        return <div key={item.id} className="childdiv">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlbxdiKTlBWwhGDX-GcYMHOgcR7e1JgRssgw&usqp=CAU" alt=""/>
                             <p>{item.title}</p>
                             <p>{item.author}</p>

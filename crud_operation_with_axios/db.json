@@ -14,6 +14,51 @@
       "title": "Frontend",
       "author": "React_Redux",
       "id": 5
+    },
+    {
+      "title": "server",
+      "author": "NodeJS",
+      "id": 6
+    },
+    {
+      "title": "server",
+      "author": "TypeScript",
+      "id": 7
+    },
+    {
+      "title": "TechStack",
+      "author": "HTML",
+      "id": 8
+    },
+    {
+      "title": "TechStack",
+      "author": "CSS",
+      "id": 9
+    },
+    {
+      "title": "TechStack",
+      "author": "JavaScript",
+      "id": 10
+    },
+    {
+      "title": "TechStack",
+      "author": "MongoDB",
+      "id": 11
+    },
+    {
+      "title": "TechStack",
+      "author": "Mongoose",
+      "id": 12
+    },
+    {
+      "title": "TechStack",
+      "author": "MERN",
+      "id": 13
+    },
+    {
+      "title": "TechStack",
+      "author": "Chakra-UI",
+      "id": 14
     }
   ]
 }
