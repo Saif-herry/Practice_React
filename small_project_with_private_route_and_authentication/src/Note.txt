@@ -1,0 +1,25 @@
+
+
+/         Home   [Accessiable to all]
+/login    Login  [Accessiable to all]
+/feed     Feed   [Accessiable after I login]
+
+
+1. Wrape our code in BrowserRouter
+2. Create Routes
+3. Creating Links in Navbar
+
+
+Goal:
+
+1. user Should be able to Login
+2. Feed page should only be accessiable once I login
+
+
+## Creating a context
+1. Create context
+2. Create Provider
+   1. return children
+   2. pass value
+3. Wrape Application inside Provider
+4. useContext
