@@ -73,6 +73,28 @@ margin:5px;
   
 }
 
+
+
+
+.parent1{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+}
+.child1{
+  /* border: 1px solid red; */
+  padding: 10px;
+  line-height: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.child1 img{
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  
+}
+
 .nativediv{
   width:100%;
   display: grid;

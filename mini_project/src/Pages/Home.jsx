@@ -19,13 +19,12 @@ useEffect(()=>{
     Fetchdata()
 },[])
 
+// cart =JSON.parse(localStorage.getItem("cartdata"))
 
 function handleClick(item){
     if(cart.indexOf(item)!==-1)return;
     setCart([...cart,item]);
-    <Cart cart={cart}/>
-    // console.log(card);
-    
+    localStorage.setItem("cartdata",JSON.stringify(cart)) 
   }
 console.log(cart)
     return(
@@ -33,9 +32,15 @@ console.log(cart)
         <div className="parent">
             {
                 data?.map((item)=>{
-                    return <div>
-                            <Card key={item.id} item={item} handleclick={handleClick} />           
-                    </div>
+                    return <div className="child" key={item.id}>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgpmagAEnb-i1KxV4FBuH_dDAtfwqY5JfH6Q&usqp=CAU" alt={item.image}/>
+                                <p>{item.name}</p>
+                                <p>Gender-{item.gender}</p>
+                                <p>Department-{item.department}</p>
+                                <p>Salery-{item.salary}</p>
+                                <button onClick={()=>handleClick(item)}>Add to Cart</button>
+        
+            </div>
                 })
             }
         </div>
