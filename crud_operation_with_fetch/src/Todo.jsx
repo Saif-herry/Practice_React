@@ -60,7 +60,7 @@ function Todo() {
     })
       .then((res) => res.json())
       .then((d) => Fetchdata(d))
-    console.log(id)
+    // console.log(id)
   }
   return (
     <div>
