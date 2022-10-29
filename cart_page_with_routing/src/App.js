@@ -8,19 +8,22 @@ function App() {
   const { productItems } = data
   const [crt, setCrt] = useState([])
 
-  const handleAddProduct = (product) => {
+  const handleAddProduct = (product) =>{
     const productExist = crt.find((item) => item.id === product.id)
+    // console.log(crt,"sssss")
     if (productExist) {
       setCrt(
         crt.map((item) =>
           item.id === product.id
             ? { ...productExist, quantity: productExist.quantity + 1 }
-            : item,
-        ),
+            : item
+        )
       )
     } else {
+      console.log(crt)
       setCrt([...crt, { ...product, quantity: 1 }])
     }
+    
   }
 
   const handleRemoveProduct = (product) => {
@@ -37,9 +40,6 @@ function App() {
       )
     }
   }
-
-  
-
   return (
     <div className="App">
       <Navbar />
