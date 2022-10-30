@@ -4,9 +4,10 @@ import SinglePage from "./SinglePage"
 
 
 
-const Home = ({crtdata,setCrtdata}) => {
+const Home = () => {
     faker.seed(123);
 
+   
 
   const productArray = [...Array(20)].map(()=>({
     id:faker.datatype.uuid(),
@@ -21,7 +22,7 @@ const Home = ({crtdata,setCrtdata}) => {
          <div className="parent">
             {
              productArray.map((item)=>{
-                  return <SinglePage key={item.id} item={item} crtdata={crtdata} setCrtdata={setCrtdata}/>
+                  return <SinglePage key={item.id} item={item}/>
              })   
             }
          </div>

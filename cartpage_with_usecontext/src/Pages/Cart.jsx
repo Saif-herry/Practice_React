@@ -1,10 +1,19 @@
-import React from "react"
+import React, { useContext, useEffect, useState } from "react"
+import { CrtContext } from "../Context"
 
-const Cart = ({crtdata,setCrtdata}) => {
+const Cart = () => {
+    const [total,setTotal] = useState()
+
+   const {crtdata,setCrtdata} = useContext(CrtContext)
+
+    useEffect((item)=>{
+      setTotal(crtdata.reduce((acc,curr)=>acc+Number(curr.price),0));
+    },[crtdata])
     console.log(crtdata)
 
     return (
         <div>
+            <span>Total:RS.{total}</span>
             <div className="parent">
                 
             

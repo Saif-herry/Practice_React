@@ -1,6 +1,9 @@
-import React from "react"
+import React, { useContext } from "react"
+import { CrtContext } from "../Context"
 
-const SinglePage = ({item,crtdata,setCrtdata}) =>{
+const SinglePage = ({item}) =>{
+  
+   const {crtdata,setCrtdata} = useContext(CrtContext)
     
     return(
         < >
