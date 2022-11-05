@@ -2,20 +2,25 @@ import React, { useEffect, useState } from "react";
 import Validation from "./Validation";
 
 const SignUp = ({submitForm}) =>{
-    const [val,setVal] = useState({
-        fullname:"",
-        email:"",
-        password:"",
-    });
+    const [val,setVal] = useState({fullname:"",
+    email:"",
+    password:"",});
 
     const [error,setError] = useState({});
     const [dataIsCorrect,setDataIsCorrect] = useState(false)
 
+
+
+
+// console.log("signupdata",signupdata)
     const handleChange = (e) =>{
 setVal({
     ...val,
     [e.target.name]:e.target.value,
+    
 });
+
+
     }
 
     const handleFormSubmit=(e)=>{

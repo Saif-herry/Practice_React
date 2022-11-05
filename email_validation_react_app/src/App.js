@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import SignUp from './Pages/SignUp';
-import SignupFormSuccesss from './Pages/SignupFormSuccess';
+import Login from './Pages/Login';
 
 
 function App() {
@@ -13,8 +13,8 @@ const submitForm = () => {
 
   return (
     <div className="App">
-      <h1>Hello Masai</h1>
-      {!show ? <SignUp submitForm={submitForm}/>:<SignupFormSuccesss/>}
+      {/* <h1>Hello Masai</h1> */}
+      {!show ? <SignUp submitForm={submitForm}/>:<Login/>}
     </div>
   );
 }

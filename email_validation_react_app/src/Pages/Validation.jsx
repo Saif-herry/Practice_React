@@ -2,7 +2,7 @@
 const Validation = (val) => {
 
 let error = {};
-  
+let signupdata =JSON.parse(localStorage.getItem("local"))||[]
 if(!val.fullname){
     error.fullname="Name is required."
 }
@@ -19,6 +19,10 @@ if(!val.password){
 }
 else if(val.password.length < 5){
     error.password = "Password must be more then five charecter"
+}
+else{
+    signupdata.push(val)
+localStorage.setItem("local",JSON.stringify(signupdata))
 }
 
 
