@@ -1,12 +1,12 @@
 
 import './App.css';
-import Signup from './Pages/Signup';
-
+import Counter from './Pages/Counter';
 
 function App() {
   return (
     <div className="App">
-     <Signup/>
+      <h1>Hello Masai</h1>
+      <Counter/>
     </div>
   );
 }

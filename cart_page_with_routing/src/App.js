@@ -20,12 +20,13 @@ function App() {
         )
       )
     } else {
-      console.log(crt)
+      
       setCrt([...crt, { ...product, quantity: 1 }])
+     
     }
     
   }
-
+  console.log(crt)
   const handleRemoveProduct = (product) => {
     const productExist = crt.find((item) => item.id === product.id)
     if (productExist.quantity === 1) {
@@ -40,6 +41,7 @@ function App() {
       )
     }
   }
+ 
   return (
     <div className="App">
       <Navbar />

@@ -2,6 +2,7 @@ import React from 'react'
 import { FaFrown } from 'react-icons/fa';
 
 const Cart = ({ crt, handleAddProduct, handleRemoveProduct }) => {
+  console.log("dddd",crt)
   const totalPrice = crt.reduce(
     (price, item) => price + item.quantity * item.salary,
     0,

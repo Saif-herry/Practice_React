@@ -16,6 +16,7 @@ const SinglePage = ({item}) =>{
                     }}>Add to Cart</button>
                     <button onClick={()=>{
                         setCrtdata(crtdata.filter((c)=>c.id!==item.id))
+                        //crtdata-[1,2,3,4]!==4     ->a!==b-->add
                     }}>Remove From Cart</button>
                   </div>    
         </>
