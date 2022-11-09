@@ -1,26 +1,3 @@
 .App {
   text-align: center;
 }
-
-.formInput{
-  display: flex;
-  flex-direction: column;
-  max-width: 200px;
-  margin:40px auto 0px;
-  gap: 10px;
-}
-
-.formWrapp{
-  display: flex;
-  flex-direction: column;
-margin-top: 20px;
-}
-
-.formWrapp div{
- display: flex;
- flex-direction: column;
- max-width: 200px;
- margin:auto;
- border: 1px solid red;
-
-}
