@@ -14,9 +14,9 @@ const SignUp = ({submitForm}) =>{
 
 // console.log("signupdata",signupdata)
     const handleChange = (e) =>{
-setVal({
-    ...val,
-    [e.target.name]:e.target.value,
+       setVal({
+        ...val,
+       [e.target.name]:e.target.value,
     
 });
 
@@ -32,6 +32,7 @@ setVal({
     useEffect(()=>{
         if(Object.keys(error).length===0 && dataIsCorrect){
             submitForm(true)
+            alert("Sign Up Successfull")
         }
     },[error])
     return (
