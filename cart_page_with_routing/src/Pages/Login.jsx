@@ -41,17 +41,21 @@ const Login = () => {
        FetchFunction(inputdata)
     }
     return(
-        <div>
-        <h1>Login Here</h1>
+        <div className="LoginDiv">
+        {/* <h1>Login Here</h1> */}
+        <div className="formdiv">
         <form onSubmit={handleFormSubmit}>
             <label>Email</label>
+            <br/>
             <input type="email" name="email" value={inputdata.email} onChange={handleChange} />
-
+                   <br/>
             <label >Password</label>
+            <br/>
             <input type="password" name="password" value={inputdata.password} onChange={handleChange}/>
-
+              <br/><br/>
             <button>Login</button>
         </form>
+        </div>
     </div>
     )
 }
