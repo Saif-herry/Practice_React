@@ -5,10 +5,10 @@ import { useReducer } from "react";
 const reducer = (state,action) => {
     switch(action.type){
         case "Increament":{
-            return state+1
+            return state+action.payload
         }
         case "Decreament":{
-            return state-1
+            return state-action.payload
         }
         default:
             return state
@@ -25,9 +25,9 @@ const [state, dispatch] = useReducer(reducer,initialState)
 
     return (
         <div className="count">
-        <button onClick={()=>dispatch({type:"Increament"})}>+</button>
+        <button onClick={()=>dispatch({type:"Increament",payload:50})}>+</button>
                       {state}
-        <button onClick={()=>dispatch({type:"Decreament"})}>-</button>
+        <button onClick={()=>dispatch({type:"Decreament",payload:100})}>-</button>
         </div>
     )
 }
