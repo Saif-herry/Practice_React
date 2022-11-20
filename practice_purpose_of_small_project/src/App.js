@@ -1,19 +1,35 @@
-import React, { useRef } from "react"
+import React, { useContext, useReducer } from "react";
 import "./App.css"
+import Navbar from "./Component/Navbar";
+import { ThemeContext } from "./Context/ThemeContext";
 
-const App = () =>{
-
-const countRef = useRef(0)
-
-const Handle = () => {
-  countRef.current++
-  console.log(`Clicked ${countRef.current} times`)
+const reducer = (state,action) => {
+      switch(action.type){
+        case "Icreament":
+          return state+1
+        case "Decreament":
+          return state-1
+        default:
+         return state
+      }
 }
-console.log("I rendered!")
 
-  return (
-    <div className="App">
-      <button onClick={Handle}>+</button>
+const initialState = 0;
+
+const App = () => {
+   const {isLight} = useContext(ThemeContext)
+  const [state,dispatch] = useReducer(reducer,initialState)
+
+  return(
+    <div className={`App ${isLight?"light":"dark"}`}>
+      <Navbar/>
+      <div className="b">
+        
+      
+      <button onClick={()=>dispatch({type:"Icreament"})}>+</button>
+                             {state}
+      <button onClick={()=>dispatch({type:"Decreament"})}>-</button>
+    </div>
     </div>
   )
 }
