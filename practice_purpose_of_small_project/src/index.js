@@ -11,13 +11,12 @@ import { ProductProvider } from './Context/ProductContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+    <BrowserRouter>
     <ProductProvider>
     <ThemeProvider>
-     <BrowserRouter>
     <App />
-    </BrowserRouter>
     </ThemeProvider>
     </ProductProvider>
-  
+    </BrowserRouter>
 );
 

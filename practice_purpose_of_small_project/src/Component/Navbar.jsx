@@ -10,6 +10,9 @@ const Navbar = () => {
             <div>
             <NavLink className="a" to="/">Home Page</NavLink>
             </div>
+           <div>
+           <NavLink className="a" to="/cart" >Cart Page</NavLink>
+           </div>
             <div>
             <button onClick={toggleTheme}>{`Make ${isLight?"Turquoise":"Blue"}`}</button>  
             </div>
