@@ -1,17 +1,25 @@
 .App {
   text-align: center;
-  height: 100vh;
+  height: 610vh;
+  /* width: 99%; */
+
 }
 
 .nav{
-
   height: 100px;
   width: 100%;
-  border:1px solid black;
+  border-bottom:1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-around;
   text-align: center;
+
+
+}
+.nav button{
+  background-color: gray;
+  position: absolute;
+ 
 }
 
 .a{
@@ -33,10 +41,25 @@
 
 .b{
 margin-top: 20px;
-}
+
+} 
 
 
 
 .count{
   text-align: center;
+}
+
+.productdiv{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  line-height: 20px;
+}
+
+.productitem{
+  border: 1px solid red;
+  padding: 10px;
+
+  
 }

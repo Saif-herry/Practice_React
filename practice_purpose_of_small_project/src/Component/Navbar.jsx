@@ -7,8 +7,13 @@ const Navbar = () => {
     const {isLight,toggleTheme} = useContext(ThemeContext)
     return(
         <div className="nav">
+            <div>
             <NavLink className="a" to="/">Home Page</NavLink>
-            <button onClick={toggleTheme}>{`Make ${isLight?"Turquoise":"Blue"}`}</button>
+            </div>
+            <div>
+            <button onClick={toggleTheme}>{`Make ${isLight?"Turquoise":"Blue"}`}</button>  
+            </div>
+           
         </div>
     )
 }
