@@ -1,41 +1,46 @@
-import React, { useContext, useReducer } from "react";
-import "./App.css"
-import Navbar from "./Component/Navbar";
-import { ProductContext } from "./Context/ProductContext";
-import { ThemeContext } from "./Context/ThemeContext";
-import MainRoutes from "./Routes/MainRoutes";
+// import React from "react";
+// import "./App.css"
+// import Counter from "./Component/Counter";
 
-const reducer = (state,action) => {
-      switch(action.type){
-        case "Icreament":
-          return state+1
-        case "Decreament":
-          return state-1
-        default:
-         return state
+
+// const App = () => {
+//   return (
+//     <div className="App">
+//       <h1>App page</h1>
+//       <Counter/>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+import React from 'react'
+  
+class App extends React.Component {
+  
+    constructor(props) {
+        super(props);
+         
+        this.myRef = React.createRef();
       }
-}
-
-const initialState = 0;
-
-const App = () => {
+       
+    handleClick = () => {
   
-  const [state,dispatch] = useReducer(reducer,initialState)
-const {isLight} = useContext(ThemeContext)
+          
+        this.myRef.current.value = "you clicked on button";
+    }
+    
+    render() {
+      return (
+        <div>
+        <input ref = {this.myRef}/>
+          <button 
+            onClick = {this.handleClick}
+          > click me </button>
+        </div>
+      );
+    }
+  }
   
-
-  
-  return(
-    <div className={`App ${isLight?"light":"dark"}`}>
-      <MainRoutes/>
-      <div className="b">
-      <button onClick={()=>dispatch({type:"Icreament"})}>+</button>
-                             {state}
-      <button onClick={()=>dispatch({type:"Decreament"})}>-</button>
-    </div>
-   
-    </div>
-  )
-}
-
-export default App
+  export default App;
