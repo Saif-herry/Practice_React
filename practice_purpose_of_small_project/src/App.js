@@ -1,20 +1,30 @@
-// import React from "react";
-// import "./App.css"
-// import Counter from "./Component/Counter";
+import React, { useRef } from "react";
+import "./App.css"
+import Counter from "./Component/Counter";
 
 
-// const App = () => {
-//   return (
-//     <div className="App">
-//       <h1>App page</h1>
-//       <Counter/>
-//     </div>
-//   )
-// }
+const App = () => {
 
-// export default App;
+  const countRef = useRef(0)
+
+  const handle = () =>{
+    countRef.current++
+    console.log(`Clicked ${countRef.current} times`)
+  }
+
+  console.log("I rendered!")
 
 
+  return (
+    <div className="App">
+      <button onClick={handle}>Click me</button>
+    </div>
+  )
+}
+
+export default App;
+
+/*
 import React from 'react'
   
 class App extends React.Component {
@@ -44,3 +54,5 @@ class App extends React.Component {
   }
   
   export default App;
+
+  */
