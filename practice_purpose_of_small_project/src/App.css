@@ -1,5 +1,7 @@
 .App {
+  display: flex;
   text-align: center;
   /* background-color: aqua; */
   height: 500vh;
+  justify-content: center;
 }

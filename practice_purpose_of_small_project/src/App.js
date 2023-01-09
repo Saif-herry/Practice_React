@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./App.css"
 import Counter from "./Component/Counter";
+import Profile from "./Profile";
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
 
   return (
     <div className="App">
+       <Profile/>
       <button onClick={handle}>Click me</button>
     </div>
   )
