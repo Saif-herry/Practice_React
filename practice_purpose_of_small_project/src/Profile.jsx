@@ -18,8 +18,9 @@ const Profile = () => {
     <div>
       <Card maxW="-moz-fit-content">
         <CardBody mr={'40'}>
+          {/* https://www.bigbasket.com/media/uploads/p/s/10000150_19-fresho-onion.jpg */}
           <Image
-            src="https://www.bigbasket.com/media/uploads/p/s/10000150_19-fresho-onion.jpg"
+            src=""
             alt="Green double couch with wooden legs"
             borderRadius="md"
           />
