@@ -7,8 +7,12 @@ export const getProductData = () => async(dispatch) => {
         let res = await fetch(api);
         let data = await res.json()
         dispatch({type : GET_PRODUCT_SUCCESS , payload : data})
-        console.log("data",data);
+        console.log("data",data)
     }
+
+
+
+    
     catch(err){
         dispatch({type : GET_PRODUCT_FAILURE})
         return err
