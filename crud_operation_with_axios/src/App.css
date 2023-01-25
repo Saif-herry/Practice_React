@@ -52,14 +52,15 @@ margin-top: 10px;
 }
 
 .inputdiv{
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction:column; */
   line-height: 15px;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   height: 100px;
   width: 50%;
   margin: auto;
   margin-top: 10px;
+  padding-top: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

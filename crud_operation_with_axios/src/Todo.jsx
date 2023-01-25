@@ -24,21 +24,22 @@ function Todo(){
 
 
 ////////////////////// FUNCTION FOR TITLE INPUT DATA////////////////////
-    function handleInput(e){
-     var val = e.target.value;
-     setInputdata(val)
-    }
+    // function handleInput(e){
+    //  var val = e.target.value;
+    //  setInputdata(val)
+    // }
 
 
 ///////////////////////////FUNCTION FOR AUTHOR INPUT DATA//////////////////    
-    function handleInput1(e){
-    var val1 = e.target.value;
-    setInputdata1(val1)
-    }
+    // function handleInput1(e){
+    // var val1 = e.target.value;
+    // setInputdata1(val1)
+    // }
  
 
  /////////////////////FUNCTION FOR POST DATA USING AXIOS INSIDE BUTTON////////////////////   
-    function handleClick(){
+    function handleClick(e){
+        e.preventDefault()
         var title = inputdata
         var author = inputdata1
         var obj = {
@@ -46,7 +47,7 @@ function Todo(){
             author
         }
         console.log(obj)
-        axios.post(api,obj).then((res)=>Fetchdata(res)).catch((err)=>console.log("err",err))
+        axios.post(api,obj).then(()=>Fetchdata()).catch((err)=>console.log("err",err))
     }
 
 ////////////////////DELETE FUNCTION WITH AXIOS/////////////////////////
@@ -62,14 +63,16 @@ function handleDelete(id){
         <div>
 
             <div className="inputdiv">
+                <form onSubmit={handleClick}>
                 <div>
                 <h3>Enter Title and Author</h3>
                 </div>
                 <div>
-                <input placeholder="Enter Title" onChange={handleInput}/>
-                <input placeholder = "Enter Author Name" onChange={handleInput1}/>
-                <button onClick={handleClick}>+</button>
+                <input placeholder="Enter Title" onChange={(e)=>setInputdata(e.target.value)}/>
+                <input placeholder = "Enter Author Name" onChange={(e)=>setInputdata1(e.target.value)}/>
+                <button>+</button>
                 </div>
+                </form>
             </div>
 {/* ///////////////////////////DATA MAPING///////////////////////////////////             */}
             <div className="parentdiv">

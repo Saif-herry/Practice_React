@@ -1,64 +1,747 @@
 {
   "todos": [
     {
-      "id": 3,
-      "title": "json-server",
-      "author": "sam"
+      "title": "React",
+      "author": "Thomas",
+      "id": 21
     },
     {
-      "title": "TechStack",
-      "author": "Redux",
-      "id": 4
+      "title": "MERN Stack",
+      "author": "EDITION",
+      "id": 23
     },
     {
-      "title": "Frontend",
-      "author": "React_Redux",
-      "id": 5
+      "title": "HTML",
+      "author": "keny",
+      "id": 24
     },
     {
-      "title": "server",
-      "author": "NodeJS",
-      "id": 6
+      "title": {
+        "data": [
+          {
+            "title": "React",
+            "author": "Thomas",
+            "id": 21
+          },
+          {
+            "title": "MERN Stack",
+            "author": "EDITION",
+            "id": 23
+          },
+          {
+            "title": "HTML",
+            "author": "keny",
+            "id": 24
+          }
+        ],
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "cache-control": "no-cache",
+          "content-length": "209",
+          "content-type": "application/json; charset=utf-8",
+          "expires": "-1",
+          "pragma": "no-cache"
+        },
+        "config": {
+          "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+          },
+          "transformRequest": [
+            null
+          ],
+          "transformResponse": [
+            null
+          ],
+          "timeout": 0,
+          "xsrfCookieName": "XSRF-TOKEN",
+          "xsrfHeaderName": "X-XSRF-TOKEN",
+          "maxContentLength": -1,
+          "maxBodyLength": -1,
+          "env": {},
+          "headers": {
+            "Accept": "application/json, text/plain, */*"
+          },
+          "method": "get",
+          "url": "http://localhost:8080/todos"
+        },
+        "request": {}
+      },
+      "id": 25
     },
     {
-      "title": "server",
-      "author": "TypeScript",
-      "id": 7
+      "title": {
+        "data": [
+          {
+            "title": "React",
+            "author": "Thomas",
+            "id": 21
+          },
+          {
+            "title": "MERN Stack",
+            "author": "EDITION",
+            "id": 23
+          },
+          {
+            "title": "HTML",
+            "author": "keny",
+            "id": 24
+          },
+          {
+            "title": {
+              "data": [
+                {
+                  "title": "React",
+                  "author": "Thomas",
+                  "id": 21
+                },
+                {
+                  "title": "MERN Stack",
+                  "author": "EDITION",
+                  "id": 23
+                },
+                {
+                  "title": "HTML",
+                  "author": "keny",
+                  "id": 24
+                }
+              ],
+              "status": 200,
+              "statusText": "OK",
+              "headers": {
+                "cache-control": "no-cache",
+                "content-length": "209",
+                "content-type": "application/json; charset=utf-8",
+                "expires": "-1",
+                "pragma": "no-cache"
+              },
+              "config": {
+                "transitional": {
+                  "silentJSONParsing": true,
+                  "forcedJSONParsing": true,
+                  "clarifyTimeoutError": false
+                },
+                "transformRequest": [
+                  null
+                ],
+                "transformResponse": [
+                  null
+                ],
+                "timeout": 0,
+                "xsrfCookieName": "XSRF-TOKEN",
+                "xsrfHeaderName": "X-XSRF-TOKEN",
+                "maxContentLength": -1,
+                "maxBodyLength": -1,
+                "env": {},
+                "headers": {
+                  "Accept": "application/json, text/plain, */*"
+                },
+                "method": "get",
+                "url": "http://localhost:8080/todos"
+              },
+              "request": {}
+            },
+            "id": 25
+          }
+        ],
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "cache-control": "no-cache",
+          "content-type": "application/json; charset=utf-8",
+          "expires": "-1",
+          "pragma": "no-cache"
+        },
+        "config": {
+          "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+          },
+          "transformRequest": [
+            null
+          ],
+          "transformResponse": [
+            null
+          ],
+          "timeout": 0,
+          "xsrfCookieName": "XSRF-TOKEN",
+          "xsrfHeaderName": "X-XSRF-TOKEN",
+          "maxContentLength": -1,
+          "maxBodyLength": -1,
+          "env": {},
+          "headers": {
+            "Accept": "application/json, text/plain, */*"
+          },
+          "method": "get",
+          "url": "http://localhost:8080/todos"
+        },
+        "request": {}
+      },
+      "id": 26
     },
     {
-      "title": "TechStack",
-      "author": "HTML",
-      "id": 8
+      "title": [
+        {
+          "title": "React",
+          "author": "Thomas",
+          "id": 21
+        },
+        {
+          "title": "MERN Stack",
+          "author": "EDITION",
+          "id": 23
+        },
+        {
+          "title": "HTML",
+          "author": "keny",
+          "id": 24
+        },
+        {
+          "title": {
+            "data": [
+              {
+                "title": "React",
+                "author": "Thomas",
+                "id": 21
+              },
+              {
+                "title": "MERN Stack",
+                "author": "EDITION",
+                "id": 23
+              },
+              {
+                "title": "HTML",
+                "author": "keny",
+                "id": 24
+              }
+            ],
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "cache-control": "no-cache",
+              "content-length": "209",
+              "content-type": "application/json; charset=utf-8",
+              "expires": "-1",
+              "pragma": "no-cache"
+            },
+            "config": {
+              "transitional": {
+                "silentJSONParsing": true,
+                "forcedJSONParsing": true,
+                "clarifyTimeoutError": false
+              },
+              "transformRequest": [
+                null
+              ],
+              "transformResponse": [
+                null
+              ],
+              "timeout": 0,
+              "xsrfCookieName": "XSRF-TOKEN",
+              "xsrfHeaderName": "X-XSRF-TOKEN",
+              "maxContentLength": -1,
+              "maxBodyLength": -1,
+              "env": {},
+              "headers": {
+                "Accept": "application/json, text/plain, */*"
+              },
+              "method": "get",
+              "url": "http://localhost:8080/todos"
+            },
+            "request": {}
+          },
+          "id": 25
+        },
+        {
+          "title": {
+            "data": [
+              {
+                "title": "React",
+                "author": "Thomas",
+                "id": 21
+              },
+              {
+                "title": "MERN Stack",
+                "author": "EDITION",
+                "id": 23
+              },
+              {
+                "title": "HTML",
+                "author": "keny",
+                "id": 24
+              },
+              {
+                "title": {
+                  "data": [
+                    {
+                      "title": "React",
+                      "author": "Thomas",
+                      "id": 21
+                    },
+                    {
+                      "title": "MERN Stack",
+                      "author": "EDITION",
+                      "id": 23
+                    },
+                    {
+                      "title": "HTML",
+                      "author": "keny",
+                      "id": 24
+                    }
+                  ],
+                  "status": 200,
+                  "statusText": "OK",
+                  "headers": {
+                    "cache-control": "no-cache",
+                    "content-length": "209",
+                    "content-type": "application/json; charset=utf-8",
+                    "expires": "-1",
+                    "pragma": "no-cache"
+                  },
+                  "config": {
+                    "transitional": {
+                      "silentJSONParsing": true,
+                      "forcedJSONParsing": true,
+                      "clarifyTimeoutError": false
+                    },
+                    "transformRequest": [
+                      null
+                    ],
+                    "transformResponse": [
+                      null
+                    ],
+                    "timeout": 0,
+                    "xsrfCookieName": "XSRF-TOKEN",
+                    "xsrfHeaderName": "X-XSRF-TOKEN",
+                    "maxContentLength": -1,
+                    "maxBodyLength": -1,
+                    "env": {},
+                    "headers": {
+                      "Accept": "application/json, text/plain, */*"
+                    },
+                    "method": "get",
+                    "url": "http://localhost:8080/todos"
+                  },
+                  "request": {}
+                },
+                "id": 25
+              }
+            ],
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "cache-control": "no-cache",
+              "content-type": "application/json; charset=utf-8",
+              "expires": "-1",
+              "pragma": "no-cache"
+            },
+            "config": {
+              "transitional": {
+                "silentJSONParsing": true,
+                "forcedJSONParsing": true,
+                "clarifyTimeoutError": false
+              },
+              "transformRequest": [
+                null
+              ],
+              "transformResponse": [
+                null
+              ],
+              "timeout": 0,
+              "xsrfCookieName": "XSRF-TOKEN",
+              "xsrfHeaderName": "X-XSRF-TOKEN",
+              "maxContentLength": -1,
+              "maxBodyLength": -1,
+              "env": {},
+              "headers": {
+                "Accept": "application/json, text/plain, */*"
+              },
+              "method": "get",
+              "url": "http://localhost:8080/todos"
+            },
+            "request": {}
+          },
+          "id": 26
+        }
+      ],
+      "id": 27
     },
     {
-      "title": "TechStack",
-      "author": "CSS",
-      "id": 9
-    },
-    {
-      "title": "TechStack",
-      "author": "JavaScript",
-      "id": 10
-    },
-    {
-      "title": "TechStack",
-      "author": "MongoDB",
-      "id": 11
-    },
-    {
-      "title": "TechStack",
-      "author": "Mongoose",
-      "id": 12
-    },
-    {
-      "title": "TechStack",
-      "author": "MERN",
-      "id": 13
-    },
-    {
-      "title": "TechStack",
-      "author": "Chakra-UI",
-      "id": 14
+      "title": [
+        {
+          "title": "React",
+          "author": "Thomas",
+          "id": 21
+        },
+        {
+          "title": "MERN Stack",
+          "author": "EDITION",
+          "id": 23
+        },
+        {
+          "title": "HTML",
+          "author": "keny",
+          "id": 24
+        },
+        {
+          "title": {
+            "data": [
+              {
+                "title": "React",
+                "author": "Thomas",
+                "id": 21
+              },
+              {
+                "title": "MERN Stack",
+                "author": "EDITION",
+                "id": 23
+              },
+              {
+                "title": "HTML",
+                "author": "keny",
+                "id": 24
+              }
+            ],
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "cache-control": "no-cache",
+              "content-length": "209",
+              "content-type": "application/json; charset=utf-8",
+              "expires": "-1",
+              "pragma": "no-cache"
+            },
+            "config": {
+              "transitional": {
+                "silentJSONParsing": true,
+                "forcedJSONParsing": true,
+                "clarifyTimeoutError": false
+              },
+              "transformRequest": [
+                null
+              ],
+              "transformResponse": [
+                null
+              ],
+              "timeout": 0,
+              "xsrfCookieName": "XSRF-TOKEN",
+              "xsrfHeaderName": "X-XSRF-TOKEN",
+              "maxContentLength": -1,
+              "maxBodyLength": -1,
+              "env": {},
+              "headers": {
+                "Accept": "application/json, text/plain, */*"
+              },
+              "method": "get",
+              "url": "http://localhost:8080/todos"
+            },
+            "request": {}
+          },
+          "id": 25
+        },
+        {
+          "title": {
+            "data": [
+              {
+                "title": "React",
+                "author": "Thomas",
+                "id": 21
+              },
+              {
+                "title": "MERN Stack",
+                "author": "EDITION",
+                "id": 23
+              },
+              {
+                "title": "HTML",
+                "author": "keny",
+                "id": 24
+              },
+              {
+                "title": {
+                  "data": [
+                    {
+                      "title": "React",
+                      "author": "Thomas",
+                      "id": 21
+                    },
+                    {
+                      "title": "MERN Stack",
+                      "author": "EDITION",
+                      "id": 23
+                    },
+                    {
+                      "title": "HTML",
+                      "author": "keny",
+                      "id": 24
+                    }
+                  ],
+                  "status": 200,
+                  "statusText": "OK",
+                  "headers": {
+                    "cache-control": "no-cache",
+                    "content-length": "209",
+                    "content-type": "application/json; charset=utf-8",
+                    "expires": "-1",
+                    "pragma": "no-cache"
+                  },
+                  "config": {
+                    "transitional": {
+                      "silentJSONParsing": true,
+                      "forcedJSONParsing": true,
+                      "clarifyTimeoutError": false
+                    },
+                    "transformRequest": [
+                      null
+                    ],
+                    "transformResponse": [
+                      null
+                    ],
+                    "timeout": 0,
+                    "xsrfCookieName": "XSRF-TOKEN",
+                    "xsrfHeaderName": "X-XSRF-TOKEN",
+                    "maxContentLength": -1,
+                    "maxBodyLength": -1,
+                    "env": {},
+                    "headers": {
+                      "Accept": "application/json, text/plain, */*"
+                    },
+                    "method": "get",
+                    "url": "http://localhost:8080/todos"
+                  },
+                  "request": {}
+                },
+                "id": 25
+              }
+            ],
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "cache-control": "no-cache",
+              "content-type": "application/json; charset=utf-8",
+              "expires": "-1",
+              "pragma": "no-cache"
+            },
+            "config": {
+              "transitional": {
+                "silentJSONParsing": true,
+                "forcedJSONParsing": true,
+                "clarifyTimeoutError": false
+              },
+              "transformRequest": [
+                null
+              ],
+              "transformResponse": [
+                null
+              ],
+              "timeout": 0,
+              "xsrfCookieName": "XSRF-TOKEN",
+              "xsrfHeaderName": "X-XSRF-TOKEN",
+              "maxContentLength": -1,
+              "maxBodyLength": -1,
+              "env": {},
+              "headers": {
+                "Accept": "application/json, text/plain, */*"
+              },
+              "method": "get",
+              "url": "http://localhost:8080/todos"
+            },
+            "request": {}
+          },
+          "id": 26
+        },
+        {
+          "title": [
+            {
+              "title": "React",
+              "author": "Thomas",
+              "id": 21
+            },
+            {
+              "title": "MERN Stack",
+              "author": "EDITION",
+              "id": 23
+            },
+            {
+              "title": "HTML",
+              "author": "keny",
+              "id": 24
+            },
+            {
+              "title": {
+                "data": [
+                  {
+                    "title": "React",
+                    "author": "Thomas",
+                    "id": 21
+                  },
+                  {
+                    "title": "MERN Stack",
+                    "author": "EDITION",
+                    "id": 23
+                  },
+                  {
+                    "title": "HTML",
+                    "author": "keny",
+                    "id": 24
+                  }
+                ],
+                "status": 200,
+                "statusText": "OK",
+                "headers": {
+                  "cache-control": "no-cache",
+                  "content-length": "209",
+                  "content-type": "application/json; charset=utf-8",
+                  "expires": "-1",
+                  "pragma": "no-cache"
+                },
+                "config": {
+                  "transitional": {
+                    "silentJSONParsing": true,
+                    "forcedJSONParsing": true,
+                    "clarifyTimeoutError": false
+                  },
+                  "transformRequest": [
+                    null
+                  ],
+                  "transformResponse": [
+                    null
+                  ],
+                  "timeout": 0,
+                  "xsrfCookieName": "XSRF-TOKEN",
+                  "xsrfHeaderName": "X-XSRF-TOKEN",
+                  "maxContentLength": -1,
+                  "maxBodyLength": -1,
+                  "env": {},
+                  "headers": {
+                    "Accept": "application/json, text/plain, */*"
+                  },
+                  "method": "get",
+                  "url": "http://localhost:8080/todos"
+                },
+                "request": {}
+              },
+              "id": 25
+            },
+            {
+              "title": {
+                "data": [
+                  {
+                    "title": "React",
+                    "author": "Thomas",
+                    "id": 21
+                  },
+                  {
+                    "title": "MERN Stack",
+                    "author": "EDITION",
+                    "id": 23
+                  },
+                  {
+                    "title": "HTML",
+                    "author": "keny",
+                    "id": 24
+                  },
+                  {
+                    "title": {
+                      "data": [
+                        {
+                          "title": "React",
+                          "author": "Thomas",
+                          "id": 21
+                        },
+                        {
+                          "title": "MERN Stack",
+                          "author": "EDITION",
+                          "id": 23
+                        },
+                        {
+                          "title": "HTML",
+                          "author": "keny",
+                          "id": 24
+                        }
+                      ],
+                      "status": 200,
+                      "statusText": "OK",
+                      "headers": {
+                        "cache-control": "no-cache",
+                        "content-length": "209",
+                        "content-type": "application/json; charset=utf-8",
+                        "expires": "-1",
+                        "pragma": "no-cache"
+                      },
+                      "config": {
+                        "transitional": {
+                          "silentJSONParsing": true,
+                          "forcedJSONParsing": true,
+                          "clarifyTimeoutError": false
+                        },
+                        "transformRequest": [
+                          null
+                        ],
+                        "transformResponse": [
+                          null
+                        ],
+                        "timeout": 0,
+                        "xsrfCookieName": "XSRF-TOKEN",
+                        "xsrfHeaderName": "X-XSRF-TOKEN",
+                        "maxContentLength": -1,
+                        "maxBodyLength": -1,
+                        "env": {},
+                        "headers": {
+                          "Accept": "application/json, text/plain, */*"
+                        },
+                        "method": "get",
+                        "url": "http://localhost:8080/todos"
+                      },
+                      "request": {}
+                    },
+                    "id": 25
+                  }
+                ],
+                "status": 200,
+                "statusText": "OK",
+                "headers": {
+                  "cache-control": "no-cache",
+                  "content-type": "application/json; charset=utf-8",
+                  "expires": "-1",
+                  "pragma": "no-cache"
+                },
+                "config": {
+                  "transitional": {
+                    "silentJSONParsing": true,
+                    "forcedJSONParsing": true,
+                    "clarifyTimeoutError": false
+                  },
+                  "transformRequest": [
+                    null
+                  ],
+                  "transformResponse": [
+                    null
+                  ],
+                  "timeout": 0,
+                  "xsrfCookieName": "XSRF-TOKEN",
+                  "xsrfHeaderName": "X-XSRF-TOKEN",
+                  "maxContentLength": -1,
+                  "maxBodyLength": -1,
+                  "env": {},
+                  "headers": {
+                    "Accept": "application/json, text/plain, */*"
+                  },
+                  "method": "get",
+                  "url": "http://localhost:8080/todos"
+                },
+                "request": {}
+              },
+              "id": 26
+            }
+          ],
+          "id": 27
+        }
+      ],
+      "id": 28
     }
   ]
 }

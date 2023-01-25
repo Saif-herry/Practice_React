@@ -1,0 +1,17 @@
+.parent{
+    /* border:1px solid red */
+    margin: auto;
+    margin-top: 10px;
+    width: 60%;
+}
+
+
+
+tr,th{
+    border: 1px solid gray;
+}
+
+.child1 :nth-child(even) {
+  padding: 20PX;  
+  background-color:gray;
+}
