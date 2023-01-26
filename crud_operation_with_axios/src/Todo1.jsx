@@ -34,13 +34,6 @@ const Todo1 = () =>{
     }
     /*
 axios.delete(api+`/${id}`).then((res)=>Fetch()).catch((err)=>console.log("err",err))
-axios.delete(api+`/${id}`).then((res)=>Fetch()).catch((err)=>console.log('err',err))
-fetch(api).then((res)=>res.json()).then((d)=>setData(d))
-fetch(api,{
-    method:"POST",
-    body:JSON.stringify(obj),
-    headers:{"content-type":"aplication-json"},
-}).then((res)=>res.json()).then((d)=>Fetch(d))
 
 fetch(api,{
     method:"POST",
