@@ -33,8 +33,6 @@ const Todo1 = () =>{
        axios.delete(api +`/${id}`).then((res)=>Fetch()).catch((err)=>console.log('err',err))
     }
     /*
-axios.delete(api+`/${id}`).then((res)=>Fetch()).catch((err)=>console.log("err",err))
-
 fetch(api,{
     method:"POST",
     body:JSON.stringify,
