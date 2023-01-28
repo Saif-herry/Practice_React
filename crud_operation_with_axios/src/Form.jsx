@@ -1,39 +1,30 @@
-import axios from "axios"
-import React, { useEffect, useState } from "react"
+import React, { useState } from 'react'
 
 const Form = () =>{
-    const [data,setData] = useState("")
+const [inputdata,setInputdata] = useState("")
+const [emaildata,setEmaildata] = useState("")
 
-    let api ="http://localhost:8080/todos"
-
-    const Fetch=()=>{
-      axios.get(api).then((res)=>setData(res.data)).catch((err)=>console.log("err",err))
+  const handleSubmit = (e) =>{
+    e.preventDefault()
+    let email= emaildata;
+    let name = inputdata;
+    let obj = {
+      email,
+      name
     }
-    useEffect(()=>{
-       Fetch() 
-    })
-    
-    
+    console.log("InputForm:-",obj)
 
-    const handleSubmit = (e) =>{
-      e.preventDefault()
-       let  title = data
-      let obj = {
-           title
-      }
+  }
 
-      axios.post(api,obj).then((res)=>Fetch()).catch((err)=>console.log("err",err))
-      console.log(data)
-    }
-
-    return(
-        <>
-        <form onSubmit={handleSubmit}>
-            <input Placeholder="Enter Name" onChange={(e)=>setData(e.target.value)} />
-            <button>Submit</button>
-        </form>
-        </>
-    )
+  return(
+    <>
+    <form onSubmit={handleSubmit}>
+      <input placeholder='Enter Email' type="email" onChange={(e)=>setEmaildata(e.target.value)}/>
+      <input placeholder="Enter User Name" type="text" onChange={(e)=>setInputdata(e.target.value)}/>
+      <button>Submit</button>
+    </form >
+    </>
+  )
 }
 
 export default Form
