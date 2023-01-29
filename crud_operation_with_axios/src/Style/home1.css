@@ -1,0 +1,16 @@
+
+.parent{
+   background-color: azure;
+   text-align: center;
+}
+
+.parent1{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 40px;
+    width: 50%;
+    margin: auto;
+}
+
+.parent1 p{
+    padding: 10px;
+}
