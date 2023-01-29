@@ -1,14 +1,17 @@
 import React from "react"
-import { useState } from "react"
+import useCounter from "./custom_hook/useCounter"
 
 const Counter = () => {
-    const [inc,setInc] = useState(0)
+   
+    const [inc,incFun,decFun] = useCounter()
     
     return(
         <>
-        <button onClick={()=>setInc(inc+1)}>+</button>
+        <div style={{height:"200px",width:"40%",margin:"auto",marginTop:"50px",backgroundColor:"gray"}}> 
+        <button onClick={incFun} style={{marginTop:"40px"}}>+</button>
         <h3>{inc}</h3>
-        <button onClick={()=>setInc(inc-1)}>-</button>
+        <button onClick={decFun}>-</button>
+        </div>
         </>
     )
 }
