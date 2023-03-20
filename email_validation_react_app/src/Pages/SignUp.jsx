@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Validation from "./Validation";
+import {IoMdCheckboxOutline} from "react-icons/io"
+
 
 const SignUp = ({submitForm}) =>{
     const [val,setVal] = useState({fullname:"",
@@ -9,10 +11,10 @@ const SignUp = ({submitForm}) =>{
     const [error,setError] = useState({});
     const [dataIsCorrect,setDataIsCorrect] = useState(false)
 
+    
 
 
-
-// console.log("signupdata",signupdata)
+console.log("form-data--",val.password.length)
     const handleChange = (e) =>{
        setVal({
         ...val,
@@ -40,11 +42,11 @@ const SignUp = ({submitForm}) =>{
             <div className="signupWrapper">
 
             <h1 className="a">SIgnUp</h1>
-
+           {val.password.length>=5?<span><IoMdCheckboxOutline/></span>:"* password must be atleast 5 charecter"}<br/>
+           {val.password.length>=5?<span><IoMdCheckboxOutline/></span>:"* password must be atleast 5 charecter"}
             <form className="signupform">
-                
                     <div>
-                    <label>Full Name</label>
+                    <label>Full Name </label>
                     <input type="text" name="fullname" value={val.fullname} onChange={handleChange}/>
                     {error.fullname && <p>{error.fullname}</p>}
                     </div>
